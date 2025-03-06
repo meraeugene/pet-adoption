@@ -40,6 +40,7 @@
 </head>
 <?php
 session_start();
+include("./auth/authMiddleware.php")
 ?>
 <body>
 

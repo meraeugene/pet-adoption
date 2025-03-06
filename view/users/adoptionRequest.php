@@ -1,5 +1,4 @@
 <?php
-session_start();
 include("../../dB/config.php");
 include("../../auth/authenticationForUser.php");
 include("./includes/header.php");
@@ -16,7 +15,7 @@ $userId = $_SESSION['authUser']['userId']; // Get the logged-in user's ID
 
 ?>
 
-<main style=" display: flex; justify-content: center;  flex-direction: column; padding: 2em; ">
+<main style=" display: flex; justify-content: center;  flex-direction: column; padding: 5em 2em; ">
 <div class="pagetitle">
     <h1>Your Adoption Requests</h1>
     <nav>

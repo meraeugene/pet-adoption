@@ -1,5 +1,4 @@
 <?php
-session_start();
 include("../../dB/config.php");
 include("../../auth/authenticationForUser.php");
 include("../users/includes/header.php");
