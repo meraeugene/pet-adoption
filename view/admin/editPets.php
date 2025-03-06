@@ -2,6 +2,7 @@
 ob_start();   // Start output buffering
 session_start();
 include("../../dB/config.php");
+include("../../auth/authentication.php");
 include("./includes/header.php");
 include("./includes/topbar.php");
 include("./includes/sidebar.php");
@@ -56,13 +57,20 @@ if (isset($_POST['update'])) {
 }
 ?>
 
+
+<style>
+body {
+    background-color: #fff4d6;
+}
+</style>
+
 <div class="pagetitle">
-    <h1>Edit Pet</h1>
+    <h1 style="color:#010101;">Edit Pet</h1>
     <nav>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../admin/dashboard.php">Home</a></li>
             <li class="breadcrumb-item"><a href="pets.php">Pets</a></li>
-            <li class="breadcrumb-item active">Edit Pet</li>
+            <li class="breadcrumb-item active" style="color:#010101;">Edit Pet</li>
         </ol>
     </nav>
 </div><!-- End Page Title -->
@@ -72,7 +80,7 @@ if (isset($_POST['update'])) {
         <div class="col-lg-8">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Pet Details</h5>
+                    <h5 class="card-title" style="color:#010101;">Pet Details</h5>
 
                     <!-- Form to Edit Pet -->
                     <form action="" method="POST">
@@ -131,7 +139,7 @@ if (isset($_POST['update'])) {
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit" name="update" class="btn btn-primary">Update Pet</button>
+                        <button type="submit" name="update" class="btn btn-primary" style="background-color: #ff693b; border: 1px solid #ff693b;">Update Pet</button>
                     </form>
                 </div>
             </div>

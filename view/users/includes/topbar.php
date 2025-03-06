@@ -4,7 +4,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a   class="logo d-flex align-items-center">
         <img src="../../assets/img/pet-care.png" alt="" >
-        <span class="d-none d-lg-block">PawConnect</span>
+        <span class="d-none d-lg-block" style="color: #ff693b;">PawConnect</span>
       </a>
     </div><!-- End Logo -->
 
@@ -163,8 +163,8 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-          <i class="bi bi-person-circle" style="font-size: 1.5rem;"></i>
-          <span class="d-none d-md-block dropdown-toggle ps-2">            
+          <i style="color: #010101;" class="bi bi-person-circle" style="font-size: 1.5rem;"></i>
+          <span   style="color: #010101;" class="d-none d-md-block dropdown-toggle ps-2">            
               <?php echo isset($_SESSION['authUser']['fullName']) ? $_SESSION['authUser']['fullName'] : "Guest"; ?>
             </span>
           </a><!-- End Profile Iamge Icon -->
@@ -179,7 +179,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="editProfile.php">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>
@@ -187,6 +187,17 @@
             <li>
               <hr class="dropdown-divider">
             </li>
+
+              <li>
+              <a class="dropdown-item d-flex align-items-center" href="accountSettings.php">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+               <li>
+              <hr class="dropdown-divider">
+            </li>
+
 
             <li>
               <a class="dropdown-item d-flex align-items-center" href="adoptionRequest.php">

@@ -7,12 +7,18 @@ include("./includes/sidebar.php");
 ?>
 
 
+<style>
+body{
+    background-color: #fff4d6;
+}
+</style>
+
 <div class="pagetitle">
-    <h1>PawConnect Dashboard</h1>
+    <h1  style="color: #010101;">PawConnect Dashboard</h1>
     <nav>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../admin/index.php">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
+        <ol class="breadcrumb" >
+            <li class="breadcrumb-item"><a href="../admin/index.php" >Home</a></li>
+            <li class="breadcrumb-item active"  style="color:#010101;">Dashboard</li>
         </ol>
     </nav>
 </div><!-- End Page Title -->
@@ -23,7 +29,7 @@ include("./includes/sidebar.php");
         <div class="col-lg-6 col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Total Users</h5>
+                    <h5 class="card-title" style="color: #010101;">Total Users</h5>
                     <p class="fs-1">
                         <?php
                         // Query to get total number of users
@@ -41,7 +47,7 @@ include("./includes/sidebar.php");
         <div class="col-lg-6 col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Total Pets Listed</h5>
+                    <h5 class="card-title" style="color: #010101;">Total Pets Listed</h5>
                     <p class="fs-1">
                         <?php
                         // Query to get total number of pets listed
@@ -62,7 +68,7 @@ include("./includes/sidebar.php");
         <div class="col-lg-6 col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Available Pets</h5>
+                    <h5 class="card-title" style="color: #010101;">Available Pets</h5>
                     <p class="fs-1">
                         <?php
                         // Query to get total number of available pets
@@ -80,7 +86,7 @@ include("./includes/sidebar.php");
         <div class="col-lg-6 col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Adopted Pets</h5>
+                    <h5 class="card-title" style="color: #010101;">Adopted Pets</h5>
                     <p class="fs-1">
                         <?php
                         // Query to get total number of adopted pets
@@ -101,7 +107,7 @@ include("./includes/sidebar.php");
     <div class="col-lg-6 col-md-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Users and Pets Listed Chart</h5>
+                <h5 class="card-title" style="color: #010101;">Users and Pets Listed Chart</h5>
                 <canvas id="userPetChart" height="300"></canvas>
             </div>
         </div>
@@ -111,7 +117,7 @@ include("./includes/sidebar.php");
     <div class="col-lg-6 col-md-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Adoption Status Chart</h5>
+                <h5 class="card-title" style="color: #010101;">Adoption Status Chart</h5>
                 <canvas id="adoptionStatusChart" height="300"></canvas>
             </div>
         </div>
@@ -126,8 +132,6 @@ include("./includes/sidebar.php");
 <script src="../../assets/vendor/chart.js/chart.umd.js"></script>
 <script src="../../assets/vendor/echarts/echarts.min.js"></script>
 
-<!-- Template Main JS File -->
-<script src="../../assets/js/main.js"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {

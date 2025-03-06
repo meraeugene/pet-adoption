@@ -1,5 +1,6 @@
 <?php
 include("../../dB/config.php");
+include("../../auth/authentication.php");
 include("./includes/header.php");
 include("./includes/topbar.php");
 include("./includes/sidebar.php");
@@ -23,13 +24,19 @@ if (isset($_GET['id'])) {
 }
 ?>
 
+<style>
+body{
+    background-color: #fff4d6;
+}
+</style>
+
 <div class="pagetitle">
-  <h1>User Details</h1>
+  <h1 style="color:#010101;">User Details</h1>
   <nav>
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="../admin/dashboard.php">Home</a></li>
-      <li class="breadcrumb-item"><a href="users.php">Users</a></li>
-      <li class="breadcrumb-item active">View User</li>
+      <li class="breadcrumb-item"><a href="users.php" >Users</a></li>
+      <li class="breadcrumb-item active" style="color:#010101;">View User</li>
     </ol>
   </nav>
 </div><!-- End Page Title -->
@@ -39,7 +46,7 @@ if (isset($_GET['id'])) {
     <div class="col-lg-6">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title"><?= $user['firstName'] . ' ' . $user['lastName']; ?></h5>
+          <h5 class="card-title" style="color:#010101;"><?= $user['firstName'] . ' ' . $user['lastName']; ?></h5>
           <p><strong>Email:</strong> <?= $user['email']; ?></p>
           <p><strong>Phone:</strong> <?= $user['phoneNumber']; ?></p>
           <p><strong>Gender:</strong> <?= $user['gender']; ?></p>
@@ -55,11 +62,9 @@ if (isset($_GET['id'])) {
           
           <!-- Add any other user details here if needed -->
           
-          <a href="users.php" class="btn btn-secondary">Back to Users</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<?php include("./includes/footer.php"); ?>

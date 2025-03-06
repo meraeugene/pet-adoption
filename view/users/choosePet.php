@@ -14,12 +14,18 @@ if (!$petType) {
 
 ?>
 
+<style>
+body{
+    background-color: #fff4d6;
+}
+</style>
+
 <main style=" display: flex; justify-content: center; align-items: center; flex-direction: column; padding-top: 6em; ">
 <div class="pagetitle" style="margin-bottom: 24px;">
-    <h1><?= ucfirst($petType); ?> Pets for Adoption</h1>
+    <h1 style="color:#010101;"><?= ucfirst($petType); ?> Pets for Adoption</h1>
 </div><!-- End Page Title -->
 
-<section class="section" style="flex-wrap: wrap; width: 100%; padding: 0 4rem;">
+<section  class="section" style="flex-wrap: wrap; width: 100%; padding: 0 4rem; ">
     <div class="row" style="display: flex; justify-content: center; flex-wrap: wrap; width: 100%;">
         <?php
         // If the type is 'all', fetch all pets; otherwise, fetch pets of the selected type
@@ -65,7 +71,7 @@ if (!$petType) {
         <div class="col-lg-2 col-md-4 col-sm-6 mb-4" style="display: flex; justify-content: center; margin-bottom: 20px; ">
             <div class="card" style="width: 18rem; transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden;">
                 <div class="card-body">
-                    <h5 class="card-title"><?= $pet_name; ?></h5>
+                    <h5 class="card-title" style="color: #010101;"><?= $pet_name; ?></h5>
                     <p class="card-text">
                         <strong>Breed:</strong> <?= $row['breed']; ?><br>
                         <strong>Species:</strong> <?= $row['species']; ?><br>

@@ -15,13 +15,20 @@ $userId = $_SESSION['authUser']['userId']; // Get the logged-in user's ID
 
 ?>
 
+
+<style>
+body{
+    background-color: #fff4d6;
+}
+</style>
+
 <main style=" display: flex; justify-content: center;  flex-direction: column; padding: 5em 2em; ">
 <div class="pagetitle">
-    <h1>Your Adoption Requests</h1>
+    <h1  style="color: #010101;">Your Adoption Requests</h1>
     <nav>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-            <li class="breadcrumb-item active">Adoption Requests</li>
+            <li class="breadcrumb-item active" style="color: #010101;">Adoption Requests</li>
         </ol>
     </nav>
 </div><!-- End Page Title -->
@@ -31,7 +38,7 @@ $userId = $_SESSION['authUser']['userId']; // Get the logged-in user's ID
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Your Adoption Requests</h5>
+                    <h5 class="card-title"  style="color: #010101;">Your Adoption Requests</h5>
 
                     <!-- Table with stripped rows -->
                     <table class="table datatable">
@@ -72,7 +79,7 @@ $userId = $_SESSION['authUser']['userId']; // Get the logged-in user's ID
                                         <td><?= $row['species']; ?></td>
                                         <td><?= $row['age']; ?> years</td>
                                         <td><?= $row['color']; ?></td>
-                                        <td><?= date('F j, Y, h:i:s A', strtotime($row['request_date'])); ?></td>
+                                        <td><?= date('F j, Y, g:i A', strtotime($row['request_date'])); ?></td>
                                         <td><span class="badge <?= $statusClass; ?>"><?= $status; ?></span></td>
                                     </tr>
                             <?php
@@ -86,7 +93,7 @@ $userId = $_SESSION['authUser']['userId']; // Get the logged-in user's ID
                     <!-- End Table with stripped rows -->
                     
                     <!-- Button to submit a new adoption request -->
-                    <a href="adoptNow.php" class="btn btn-primary">Submit a New Adoption Request</a>
+                    <a href="adoptNow.php" class="btn btn-primary" style="background-color: #ff693b; border: 1px solid #ff693b;">Submit a New Adoption Request</a>
                 </div>
             </div>
         </div>

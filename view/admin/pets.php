@@ -6,12 +6,18 @@ include("./includes/topbar.php");
 include("./includes/sidebar.php");
 ?>
 
+<style>
+body{
+    background-color: #fff4d6;
+}
+</style>
+
 <div class="pagetitle">
-    <h1>Pet Listings</h1>
+    <h1 style="color: #010101;" >Pet Listings</h1>
     <nav>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../admin/index.php">Home</a></li>
-            <li class="breadcrumb-item active">Pets</li>
+            <li class="breadcrumb-item active" style="color:#010101;">Pets</li>
         </ol>
     </nav>
 </div><!-- End Page Title -->
@@ -21,10 +27,10 @@ include("./includes/sidebar.php");
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Pets</h5>
+                    <h5 class="card-title" style="color: #010101;">Pets</h5>
 
                     <!-- Add New Pet Button -->
-                    <a href="addPets.php" class="btn btn-primary mb-3">Add New Pet</a>
+                    <a href="addPets.php" class="btn btn-primary mb-3" style="background-color: #ff693b; border: 1px solid #ff693b;">Add New Pet</a>
 
                     <!-- Table with stripped rows -->
                     <table class="table datatable">

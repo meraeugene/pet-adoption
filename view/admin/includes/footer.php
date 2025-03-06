@@ -2,7 +2,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-    <div class="copyright">
+    <div class="copyright" style="color:#010101;">
       &copy; Copyright <strong><span >PawConnect</span></strong>. All Rights Reserved
     </div>
   </footer><!-- End Footer -->

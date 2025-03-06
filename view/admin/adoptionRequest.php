@@ -32,12 +32,18 @@ if (isset($_POST['update_status'])) {
 }
 ?>
 
+<style>
+body{
+    background-color: #fff4d6;
+}
+</style>
+
 <div class="pagetitle">
-    <h1>Adoption Requests</h1>
+    <h1 style="color: #010101;">Adoption Requests</h1>
     <nav>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../admin/index.php">Home</a></li>
-            <li class="breadcrumb-item active">Adoption Requests</li>
+            <li class="breadcrumb-item active" style="color:#010101;">Adoption Requests</li>
         </ol>
     </nav>
 </div><!-- End Page Title -->
@@ -47,7 +53,7 @@ if (isset($_POST['update_status'])) {
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Requests</h5>
+                    <h5 class="card-title" style="color: #010101;">Requests</h5>
 
                     <!-- Table with stripped rows -->
                     <table class="table datatable">
