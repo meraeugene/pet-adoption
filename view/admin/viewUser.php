@@ -34,7 +34,7 @@ body{
   <h1 style="color:#010101;">User Details</h1>
   <nav>
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../admin/dashboard.php">Home</a></li>
+      <li class="breadcrumb-item"><a href="./index.php">Home</a></li>
       <li class="breadcrumb-item"><a href="users.php" >Users</a></li>
       <li class="breadcrumb-item active" style="color:#010101;">View User</li>
     </ol>

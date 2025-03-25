@@ -1,15 +1,23 @@
 <?php
+session_start();
 include("./includes/header.php");
 include("./includes/topbar.php");
 include("./includes/sidebar.php");
 ?>
 
+
+<style>
+body{
+    background-color: #fff4d6;
+}
+</style>
+
 <div class="pagetitle">
-    <h1>Add Pet</h1>
+    <h1 style="color: #010101;" >Add Pet</h1>
     <nav>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../admin/dashboard.php">Home</a></li>
-            <li class="breadcrumb-item active">Add Pet</li>
+            <li class="breadcrumb-item active" style="color:#010101;">Add Pet</li>
         </ol>
     </nav>
 </div><!-- End Page Title -->
@@ -19,7 +27,7 @@ include("./includes/sidebar.php");
         <div class="col-lg-8">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Pet Details</h5>
+                    <h5 class="card-title" style="color: #010101;" >Pet Details</h5>
 
                     <!-- Form to Add Pet -->
                     <form action="./controller/addPetProcess.php" method="POST">
@@ -79,7 +87,7 @@ include("./includes/sidebar.php");
                         </div>
 
                         <!-- Submit Button -->
-                        <button type="submit" name="add_pet" class="btn btn-primary">Add Pet</button>
+                        <button type="submit" name="add_pet" class="btn btn-primary" style="background-color: #ff693b; border: 1px solid #ff693b;">Add Pet</button>
                     </form>
                 </div>
             </div>
