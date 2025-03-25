@@ -72,7 +72,7 @@ body{
                     <td><span class="badge <?= $adoptionStatusClass; ?>"><?= $adoptionStatusText; ?></span></td>
                     <td>
                         <a href="./editPets.php?id=<?= $row['id']; ?>" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="./controller/deletePetProcess.php?id=<?= $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this pet?');">Delete</a>
+                        <button class="btn btn-danger btn-sm" onclick="confirmDeletePet(<?= $row['id']; ?>)">Delete</button>
                     </td>
                 </tr>
         <?php
@@ -90,6 +90,26 @@ body{
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script>
+    function confirmDeletePet(petId) {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "This action cannot be undone!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Yes, delete it!",
+            cancelButtonText: "Cancel"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = `./controller/deletePetProcess.php?id=${petId}`;
+            }
+        });
+    }
+</script>
 
 <?php
 if(isset($_SESSION['message']) && $_SESSION['code'] !='') {

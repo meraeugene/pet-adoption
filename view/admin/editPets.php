@@ -1,6 +1,5 @@
 <?php
 ob_start();   // Start output buffering
-session_start();
 include("../../dB/config.php");
 include("../../auth/authentication.php");
 include("./includes/header.php");

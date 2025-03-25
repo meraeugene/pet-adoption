@@ -5,7 +5,11 @@ include("../../../dB/config.php");
 if (isset($_GET['id'])) {
     $pet_id = $_GET['id'];
 
-    // Delete pet query
+    // Step 1: Delete related adoption requests first
+    $deleteAdoptionsQuery = "DELETE FROM `request_adoption` WHERE `pet_id` = '$pet_id'";
+    mysqli_query($conn, $deleteAdoptionsQuery);
+
+    // Step 2: Delete pet
     $query = "DELETE FROM `pets` WHERE `id` = '$pet_id'";
     $query_run = mysqli_query($conn, $query);
 

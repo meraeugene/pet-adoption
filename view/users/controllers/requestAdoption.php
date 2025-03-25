@@ -6,7 +6,7 @@ if (isset($_GET['pet_id'])) {
     $pet_id = $_GET['pet_id'];
     $userId = $_SESSION['authUser']['userId'];
 
-    // Check if the user has already requested adoption for this pet
+    // Check if the user has already requested  Please wait for the confirmation.adoption for this pet
     $check_request_query = "SELECT * FROM `request_adoption` WHERE `user_id` = '$userId' AND `pet_id` = '$pet_id' AND `status` != 'Rejected'";
     $check_request_result = mysqli_query($conn, $check_request_query);
 
@@ -26,7 +26,7 @@ if (isset($_GET['pet_id'])) {
         // Insert adoption request if the pet is available
         $insert_query = "INSERT INTO `request_adoption` (`user_id`, `pet_id`, `status`) VALUES ('$userId', '$pet_id', 'Pending')";
         if (mysqli_query($conn, $insert_query)) {
-            $_SESSION['message'] = "Adoption request submitted successfully!";
+            $_SESSION['message'] = "Adoption request submitted successfully! Please wait for the confirmation.";
             $_SESSION['code'] = "success"; 
             header("Location: ../adoptionRequest.php");
         } else {
