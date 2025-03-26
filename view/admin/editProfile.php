@@ -47,6 +47,8 @@ body {
   </nav>
 </div>
 
+<a href="./index.php" class="btn btn-primary mb-3" style="background-color: #ff693b; border: 1px solid #ff693b;">Back to Dashboard</a>
+
 <section class="section">
   <div class="row">
     <div class="col-lg-6">

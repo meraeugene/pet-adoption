@@ -68,7 +68,7 @@ body{
                     $button_class = "btn btn-success";  // Default green for available
                 }
         ?>
-        <div class="col-lg-2 col-md-4 col-sm-6 mb-4" style="display: flex; justify-content: center; margin-bottom: 20px; ">
+        <div class="col-lg-2 col-md-4 col-sm-4 mb-4" style="display: flex; justify-content: center; margin-bottom: 20px; ">
             <div class="card" style="width: 18rem; transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden;">
                 <div class="card-body">
                     <h5 class="card-title" style="color: #010101;"><?= $pet_name; ?></h5>

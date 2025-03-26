@@ -13,7 +13,9 @@ include("../users/includes/topbar.php");
 </style>
 
 <main style="height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #fff4d6;" >
-<div class="pagetitle" style="margin-bottom: 3em;">
+
+
+<div class="pagetitle" style="margin-bottom: 3em; margin-top: 3em;">
     <h1  style=" font-size: 32px; color: #ff693b;" >Select the Type of Pet You Want to Adopt</h1>
 </div><!-- End Page Title -->
 

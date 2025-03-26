@@ -23,6 +23,10 @@ body{
 </style>
 
 <main style=" display: flex; justify-content: center;  flex-direction: column; padding: 5em 2em; ">
+
+
+<a href="./index.php" class="btn btn-primary mb-3" style="background-color: #ff693b; border: 1px solid #ff693b; width: 200px;">Back to Homepage</a>
+
 <div class="pagetitle">
     <h1  style="color: #010101;">Your Adoption Requests</h1>
     <nav>
@@ -39,6 +43,8 @@ body{
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title"  style="color: #010101;">Your Adoption Requests</h5>
+
+                    <div style="overflow-x: auto; white-space: nowrap;">
 
                     <!-- Table with stripped rows -->
                     <table class="table datatable">
@@ -90,6 +96,7 @@ body{
                             ?>
                         </tbody>
                     </table>
+                        </div>
                     <!-- End Table with stripped rows -->
                     
                     <!-- Button to submit a new adoption request -->

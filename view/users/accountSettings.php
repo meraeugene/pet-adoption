@@ -49,6 +49,11 @@ body {
 </style>
 
 <main style=" display: flex; justify-content: center; flex-direction: column; padding: 6em 2em; ">
+
+
+<a href="./index.php" class="btn btn-primary mb-3" style="background-color: #ff693b; border: 1px solid #ff693b; width: 200px;">Back to Homepage</a>
+
+
 <div class="pagetitle">
   <h1 style="color:#010101;">Change Password</h1>
   <nav>
