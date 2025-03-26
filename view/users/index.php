@@ -4,12 +4,15 @@ include("../../auth/authenticationForUser.php");
 include("../users/includes/header.php");
 include("../users/includes/topbar.php");
 
+
+
 // Assuming the user's full name is stored in the session
 $user_full_name =  isset($_SESSION['authUser']['fullName']) ? $_SESSION['authUser']['fullName'] : 'Guest';
 ?>
 
+
 <section id="hero" style="background-color: #fff4d6; height: 100vh;">
-  <div style="padding:7em 3em;" class="container">
+  <div style="padding:7em 0em;" class="container">
     <div class="row gy-4">
       <div class="col-lg-6 order-2 order-lg-2 d-flex flex-column justify-content-center" style="padding: 30px;">
       

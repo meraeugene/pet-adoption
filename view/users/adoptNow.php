@@ -12,10 +12,21 @@ include("../users/includes/topbar.php");
     }
 </style>
 
+
 <main style="height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #fff4d6;" >
 
+<div>
+    
+<div style="text-align: left; width: 100%; ">
+    <a href="./index.php" class="btn btn-primary mb-3" 
+       style="background-color: #ff693b; border: 1px solid #ff693b; margin-left: 4em;">
+    <i class="bi bi-arrow-left"></i></a>
+</div>
 
-<div class="pagetitle" style="margin-bottom: 3em; margin-top: 3em;">
+
+
+
+<div class="pagetitle" style="margin-bottom: 3em; margin-top: 3em; text-align:center;">
     <h1  style=" font-size: 32px; color: #ff693b;" >Select the Type of Pet You Want to Adopt</h1>
 </div><!-- End Page Title -->
 
@@ -71,6 +82,7 @@ include("../users/includes/topbar.php");
     </div>
 </section>
 
+</div>
 
 
 </main>

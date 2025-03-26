@@ -95,6 +95,12 @@ body{
         }
         ?>
     </div>
+
+<div style="text-align: center; width: 100%;">
+    <a href="./adoptNow.php" class="btn btn-primary mb-3" 
+       style="background-color: #ff693b; border: 1px solid #ff693b;">Back to Adoption Page</a>
+</div>
+
 </section>
 
 </main>
